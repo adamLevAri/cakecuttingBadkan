@@ -25,15 +25,15 @@ TEST_CASE("Test case 1") {
     //George has four desired intervals: 0..1 with value 1, 1..2 with value 3, etc.
     PiecewiseConstantAgent George2({11,22,33,44}, "George");
 
-    CHECK(George2.cakeValue() == string("110"));
-    CHECK(George2.cakeLength() == string("4"));
-    CHECK(George2.eval(1, 3) == string("55"));
-    CHECK(George2.mark(1, 77) == string("3.5"));
+    CHECK(George2.cakeValue() == float("110"));
+    CHECK(George2.cakeLength() == float("4"));
+    CHECK(George2.eval(1, 3) == float("55"));
+    CHECK(George2.mark(1, 77) == float("3.5"));
     
-    CHECK(Alice2.cakeValue() == string("6"));
-    CHECK(Alice2.cakeLength() == string("9"));
-    CHECK(Alice2.eval(3, 1) == string("0"));
-    CHECK(Alice2.mark(0, 2) == string("3"));
+    CHECK(Alice2.cakeValue() == float("6"));
+    CHECK(Alice2.cakeLength() == float("9"));
+    CHECK(Alice2.eval(3, 1) == float("0"));
+    CHECK(Alice2.mark(0, 2) == float("3"));
     
     
 }
@@ -49,15 +49,15 @@ TEST_CASE("Test case 2") {
     //George has four desired intervals: 0..1 with value 1, 1..2 with value 3, etc.
     PiecewiseConstantAgent George({11,22,33,44}, "George");
     
-    CHECK(George.cakeValue() == string("110"));
-    CHECK(George.cakeLength() == string("4"));
-    CHECK(George.eval(1, 3) == string("55"));
-    CHECK(George.mark(1, 77) == string("3.5"));
+    CHECK(George.cakeValue() == float("110"));
+    CHECK(George.cakeLength() == float("4"));
+    CHECK(George.eval(1, 3) == float("55"));
+    CHECK(George.mark(1, 77) == float("3.5"));
     
-    CHECK(Alice.cakeValue() == string("6"));
-    CHECK(Alice.cakeLength() == string("9"));
-    CHECK(Alice.eval(3, 1) == string("0"));
-    CHECK(Alice.mark(0, 2) == string("3"));
+    CHECK(Alice.cakeValue() == float("6"));
+    CHECK(Alice.cakeLength() == float("9"));
+    CHECK(Alice.eval(3, 1) == float("0"));
+    CHECK(Alice.mark(0, 2) == float("3"));
     
     /*
     CHECK(George2.cakeValue() == 110);
