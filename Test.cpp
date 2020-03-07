@@ -49,15 +49,15 @@ TEST_CASE("Test case 2") {
     //George has four desired intervals: 0..1 with value 1, 1..2 with value 3, etc.
     PiecewiseConstantAgent George({11,22,33,44}, "George");
     
-    CHECK(George2.cakeValue() == 110);
-    CHECK(George2.cakeLength() == 4);
-    CHECK(George2.eval(1, 3) == 55);
-    CHECK(George2.mark(1, 77) == 3.5);
+    CHECK(George.cakeValue() == 110);
+    CHECK(George.cakeLength() == 4);
+    CHECK(George.eval(1, 3) == 55);
+    CHECK(George.mark(1, 77) == 3.5);
     
-    CHECK(Alice2.cakeValue() == 6);
-    CHECK(Alice2.cakeLength() == 9);
-    CHECK(Alice2.eval(3, 1) == 0);
-    CHECK(Alice2.mark(0, 2) == 3);
+    CHECK(Alice.cakeValue() == 6);
+    CHECK(Alice.cakeLength() == 9);
+    CHECK(Alice.eval(3, 1) == 0);
+    CHECK(Alice.mark(0, 2) == 3);
     
     /*
     CHECK(George.cakeValue() == string("110"));
