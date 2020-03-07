@@ -8,7 +8,7 @@
 
 #include "PiecewiseUniformAgent.hpp"
 #include "PiecewiseConstantAgent.hpp"
-#include "CutAndChoose.hpp"
+#include "LastDiminisher.hpp"
 #include <iostream>
 #include <sstream>
 
