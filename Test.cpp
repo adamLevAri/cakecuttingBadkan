@@ -16,24 +16,24 @@ using namespace cake;
 
 TEST_CASE("Test case 1") {
     
-    vector<vector<float>> vec;
-    vec = {{0,1},{2,4},{6,9}};
+    vector<vector<float>> vec2;
+    vec2 = {{0,1},{2,4},{6,9}};
     
     //Alice has two desired intervals, 0..1 and 3..6. Each interval has value 1.
-    PiecewiseUniformAgent Alice(vec, "Alice");
+    PiecewiseUniformAgent Alice2(vec2, "Alice");
     
     //George has four desired intervals: 0..1 with value 1, 1..2 with value 3, etc.
-    PiecewiseConstantAgent George({11,22,33,44}, "George");
+    PiecewiseConstantAgent George2({11,22,33,44}, "George");
 
-    CHECK(George.cakeValue() == string("110"));
-    CHECK(George.cakeLength() == string("4"));
-    CHECK(George.eval(1, 3) == string("55"));
-    CHECK(George.mark(1, 77) == string("3.5"));
+    CHECK(George2.cakeValue() == string("110"));
+    CHECK(George2.cakeLength() == string("4"));
+    CHECK(George2.eval(1, 3) == string("55"));
+    CHECK(George2.mark(1, 77) == string("3.5"));
     
-    CHECK(Alice.cakeValue() == string("6"));
-    CHECK(Alice.cakeLength() == string("9"));
-    CHECK(Alice.eval(3, 1) == string("0"));
-    CHECK(Alice.mark(0, 2) == string("3"));
+    CHECK(Alice2.cakeValue() == string("6"));
+    CHECK(Alice2.cakeLength() == string("9"));
+    CHECK(Alice2.eval(3, 1) == string("0"));
+    CHECK(Alice2.mark(0, 2) == string("3"));
     
     
 }
